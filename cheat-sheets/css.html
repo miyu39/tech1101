@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS - My Cheat Sheets - MoggieDev</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script defer src="../js/fontawesome/brands.js"></script>
+    <script defer src="../js/fontawesome/solid.js"></script>
+    <script defer src="../js/fontawesome/fontawesome.js"></script>
+</head>
+<body>
+<noscript>
+    <div id="noJSWarning">
+        <h3>It seems that JavaScript is disabled or isn't supported on your browser. </h3>
+    </div>
+</noscript>
+<div id="site">
+<header id="colMenu">
+    <div id="siteInfo">
+        <h2>MoggieDev</h2>
+        <div id="XBarsBtn">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+        </div>
+    </div>
+    <menu>
+        <li>
+            <a href="../index.html">
+                <i class="fa-solid fa-house fa-xl"></i>
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <span>My Cheat Sheets</span>
+        </li>
+        <li>
+            <a href="html.html">
+                <i class="fa-brands fa-html5 fa-xl"></i>
+                <span>HTML</span>
+            </a>
+        </li>
+        <li>
+            <a href="css.html">
+                <i class="fa-brands fa-css3-alt fa-xl"></i>
+                <span>CSS</span>
+            </a>
+        </li>
+        <li>
+            <a href="js.html">
+                <i class="fa-brands fa-js fa-xl"></i>
+                <span>JavaScript</span>
+            </a>
+        </li>
+    </menu>
+</header>
+<div id="content">
+    <div id="bars">
+        <div id="barsBtn">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+    </div>
+    <main>
+        <h1>CSS Cheat Sheet</h1>
+        <h2>Use CSS in a HTML Document</h2>
+        <p>Internal: <strong>style="color: blue;"</strong></p>
+        <p>Embedded: <strong>style</strong> in <strong>head</strong></p>
+        <p>External: <strong>link</strong></p>
+        <p>By importing: <strong>@import url("/css/style.css");</strong></p>
+        <br>
+        <br>
+
+        <h2>Selectors</h2>
+        <p>General: <strong>only element name</strong></p>
+        <p>Class: <strong>.class</strong></p>
+        <p>Only p elements with class "mytd": <strong>p.mytd</strong></p>
+        <p>ID: <strong>#id</strong></p>
+        <p>Universal: <strong>*</strong></p>
+        <p>Pseudo: <strong>a:hover, a:link, a:visited, p:hover</strong></p>
+        <p>Attribute: <strong>a[title], a[href *= "google"], a[href = "https://google.com"]</strong></p>
+        <p>Descendant: <strong>ul li a</strong></p>
+        <p>Adjacent: <strong>h1 + p</strong></p>
+        <p>Child: <strong>ul > li</strong></p>
+        <p>:nth-child(): <strong>li:nth-child(2), li:nth-child(4n), li:nth-child(even)</strong></p>
+        <br>
+        <br>
+
+        <h2>Priority Rules</h2>
+        <p><a href="https://codepen.io/jensgro/pen/XWbmeY" target="_blank">https://codepen.io/jensgro/pen/XWbmeY</a></p>
+        <br>
+        <br>
+
+        <h2>Colour</h2>
+        <p>RGB and RGBA functions</p>
+        <p><strong>rgb(255, 100%, 0), rgba(0, 255, 100%, 0.5)</strong><p>
+        <p>Hex: <strong>#ff00ff</strong></p>
+        <p>Other colour functions: <strong>hsl(), hsla()</strong></p>
+        <br>
+        <br>
+
+        <h2>Background</h2>
+        <p>Colour: <strong>background-color: #767392;</strong></p>
+        <p>Image: <strong>background-image: url("images/image.png");</strong></p>
+        <p>Repeat: <strong>background-repeat: no-repeat;</strong></p>
+        <p>Attachment: <strong>background-attachment: fixed;</strong></p>
+        <p>Position: <strong>background-position: 20px 20px;</strong></p>
+        <p>In a single line: <strong>background: #767392 url("image.png") no-repeat fixed 20px 20px;</strong></p>
+        <br>
+        <br>
+
+        <h2>Box Model</h2>
+        <p><strong>Content</strong> - The content of the box, which includes text and images.</p>
+        <p><strong>Padding</strong> - Padding refers to the transparent space between the element’s content and its border.</p>
+        <p>The background colour of an element will also be seen through its padding area if it has one.</p>
+        <p><strong>Border</strong> - The padding and content are surrounded by a border.</p>
+        <p><strong>Margin</strong> - Margin refers to the transparent area around the border. The margin area is always transparent;</p>
+        <p>it is unaffected by the element’s background colour, but it allows the parent element’s background color to be seen through it.</p>
+        <br>
+        <br>
+
+        <h2>Variables</h2>
+        <p>Declare: <strong>:root { --myBox: 100px; --myBoxColour: red; }</strong></p>
+        <p>Use: <strong>background-color: var(--myBoxColour);</strong></p>
+        <p>Calculate: <strong>width: calc(var(--myBox) * 2);</strong></p>
+        <br>
+        <br>
+
+        <h2>Viewport Units</h2>
+        <p>vw, vh, vmin, vmax</p>
+        <br>
+        <br>
+
+        <h2>Display</h2>
+        <p>Block-level Elements</p>
+        <p><strong>p, h1 ~ h6, ul, ol, hr, div, table, fieldset, form</strong></p>
+        <p>Inline elements</p>
+        <p><strong>a, b, i, u, em, strong, sup, sub, big, small, span, img</strong></p>
+        <br>
+        <p>Display: <strong>display:flex;</strong></p>
+        <p>Values: <strong>block, inline, inline-block, none, flex</strong></p>
+        <p>Flex: <strong>flex-direction, align-items, justify-content</strong></p>
+        <br>
+        <br>
+
+        <h2>Visibility</h2>
+        <p>The element is hidden, but it still takes up space in the layout when you use visibility: hidden;</p>
+        <p>hides the element, but it still takes up space in the layout.</p>
+        <p>If the visibility of a hidden box’s child element is set to visible, it will be visible.</p>
+        <p>On the other hand, display: none; disables the element’s display and removes it entirely from the page.</p>
+        <p><strong>visibility:hidden;</strong></p>
+        <br>
+        <br>
+
+        <h2>Position</h2>
+        <p>Position: <strong>position: absolute;</strong></p>
+        <p>Values: <strong>absolute, relative, fixed, inherit, static</strong></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" _target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></p>
+        <br>
+        <br>
+
+        <h2>Fonts</h2>
+        <p>Mainly five font families: <strong>serif, sans-serif, monospace, cursive, fantasy</strong></p>
+        <p>Font family: <strong>font-family: Times, "Times New Roman", Georgia, serif;</strong></p>
+        <p>Related: <strong>font-style, font-weight, font-size, font-variant, letter-spacing, word-spacing, line-height</strong></p>
+        <p>Common unit: <strong>em</strong></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" _target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/font</a></p>
+        <p><a href="https://www.cssfontstack.com/" _target="_blank">https://www.cssfontstack.com/</a></p>
+        <p><a href="https://fonts.google.com/" _target="_blank">https://fonts.google.com/</a></p>
+        <br>
+        <br>
+    </main>
+</div>
+</div>
+<script src="../js/global.js"></script>
+</body>
+</html>

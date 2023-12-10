@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript - My Cheat Sheets - MoggieDev</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script defer src="../js/fontawesome/brands.js"></script>
+    <script defer src="../js/fontawesome/solid.js"></script>
+    <script defer src="../js/fontawesome/fontawesome.js"></script>
+</head>
+<body>
+<noscript>
+    <div id="noJSWarning">
+        <h3>It seems that JavaScript is disabled or isn't supported on your browser. </h3>
+    </div>
+</noscript>
+<div id="site">
+<header id="colMenu">
+    <div id="siteInfo">
+        <h2>MoggieDev</h2>
+        <div id="XBarsBtn">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+        </div>
+    </div>
+    <menu>
+        <li>
+            <a href="../index.html">
+                <i class="fa-solid fa-house fa-xl"></i>
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <span>My Cheat Sheets</span>
+        </li>
+        <li>
+            <a href="html.html">
+                <i class="fa-brands fa-html5 fa-xl"></i>
+                <span>HTML</span>
+            </a>
+        </li>
+        <li>
+            <a href="css.html">
+                <i class="fa-brands fa-css3-alt fa-xl"></i>
+                <span>CSS</span>
+            </a>
+        </li>
+        <li>
+            <a href="js.html">
+                <i class="fa-brands fa-js fa-xl"></i>
+                <span>JavaScript</span>
+            </a>
+        </li>
+    </menu>
+</header>
+<div id="content">
+    <div id="bars">
+        <div id="barsBtn">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+    </div>
+    <main>
+        <h1>JavaScript Cheat Sheet</h1>
+        <h2>Scripting</h2>
+        <p>Inline: <strong>onClick="alert('Hello World')"</strong></p>
+        <p>Internal: <strong>script</strong></p>
+        <p>External: <strong>script src="script.js"</strong></p>
+        <br>
+        <p>Accessing HTML Elements</p>
+        <p><strong>document.getElementById(), document.getElementsByClassName(),</strong></p>
+        <p><strong>document.getElementsByName(), document.getElementsByTagName()</strong></p>
+        <br>
+        <p>Dialogs</p>
+        <p><strong>alert("Hello!");</strong></p>
+        <p><strong>confirm("Confirm delete files?");</strong></p>
+        <p><strong>let name = prompt("Please enter your name: ");</strong></p>
+        <br>
+        <br>
+
+        <h2>String</h2>
+        <p>Common methods</p>
+        <p><strong>charAt(), join(), endsWith(), indexOf(), lastIndexOf(),</strong></p>
+        <p><strong>repeat(), replace(), search(), slice(), split(), startsWith(),</strong></p>
+        <p><strong>toLowerCase(), toUpperCase(), toString(), trim()</strong></p>
+        <br>
+        <p>Escape Sequences</p>
+        <p><strong>\n, \t, \b, \\, \", \'</strong></p>
+        <br>
+        <br>
+
+        <h2>Loops</h2>
+        <p>while, do...while, for, for...in, for...of</p>
+        <br>
+        <p><strong>for(key in "array/object")</strong></p>
+        <p><strong>for(let element of array/iterable type)</strong></p>
+        <br>
+        <br>
+
+        <h2>Template Literals</h2>
+        <p><strong>max = a > b ? a : b;</strong></p>
+        <br>
+        <br>
+
+        <h2>Random Number</h2>
+        <p>Generates random numbers in the range from low to high-1</p>
+        <p><strong>Math.floor(Math.random() * (high - low)) + low</strong></p>
+        <br>
+        <br>
+
+        <h2>Array</h2>
+        <p>let myArray = [];</p>
+        <p>Common methods</p>
+        <p><strong>push(), includes(), unshift(), filter(), pop(), indexOf(),</strong></p>
+        <p><strong>shift(), lastIndexOf(), splice(), sort(), slice(), reverse(), concat(),</strong></p>
+        <p><strong>oString(), find(), join(), findIndex()</strong></p>
+        <p>Multidimensional Arrays</p>
+        <p>let myArray = [['1', 'x'], ['2', 'y']];</p>
+        <br>
+        <br>
+
+        <h2>Get Boolean</h2>
+        <p><strong>Always use === or !== rather than == or !=</strong></p>
+        <br>
+        <br>
+
+        <h2>Events</h2>
+        <p><strong>Mouse events</strong> - onmousewheel, onmouseover, onmousedown, onmouseup, onclick, ondblclick, onmouseout</p>
+        <p><strong>Keyboard events</strong> - onkeypress, onkeyup, onkeydown</p>
+        <p><strong>Form events</strong> - onfocus, onblur, onchange, onsubmit</p>
+        <p><strong>Document/window events</strong> - onload, onunload, onscroll, onresize</p>
+        <p><strong>Touch events</strong> - ontouchstart, ontouchmove, ontouchend, ontouchcancel</p>
+        <br>
+        <br>
+
+        <h2>Objects</h2>
+        <p>let myObject = {};</p>
+        <p>Adding and accessing object's properties</p>
+        <p>myObject.number = 1;</p>
+        <p>myObject["my nickname"] = "Yu";</p>
+        <p>myObject.numberArray = new Object();</p>
+        <p>myObject.numberArray.num1 = 2;</p>
+        <p>console.log(myObject.number);</p>
+        <p>console.log(myObject["my nickname"]);</p>
+        <p>console.log(myObject.numberArray.num1);</p>
+        <br>
+        <p>Enumerating properties</p>
+        <p>for (let key in myObject) { console.log(key + ": " + myObject[key]); }</p>
+        <br>
+        <p>Deleting properties</p>
+        <p>delete myObject["my nickname"]; delete myObject.numberArray;</p>
+        <br>
+        <p>Check property existence</p>
+        <p>if ("my nickname" in myObject)</p>
+        <br>
+        <p>Accessing object's methods</p>
+        <p>myObject.func = function() { alert(`Number: ${this.number}`); }</p>
+        <p>myObject.func();</p>
+        <br>
+        <br>
+    </main>
+</div>
+</div>
+<script src="../js/global.js"></script>
+</body>
+</html>
